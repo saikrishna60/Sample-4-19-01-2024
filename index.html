@@ -1,0 +1,935 @@
+<html>
+
+<head>
+
+<title> Task on 19-01-2024 Page no 208 </title>
+<link rel ="stylesheet" href="sample 4.css">
+
+</head>
+
+<body>
+
+
+<p>price of the product, investment in advertisement or R&D, etc. to leverage<br/>
+the financial results of the game, without having fully taken into account all</br>
+the complex effects of these factors.</p>
+
+
+<h2>Games for Competition</h2>
+<div style="width:550px;height:4px;background-color:black;"></div>
+<br/>
+<p><em>Game One: Competition Between Two Companies Having Different<br/>
+Material Resources (adapted from Kinoshita, 1996)</em></p>
+<div style="width:550px;height:2px;background-color:black;"></div>
+<p>Let’s consider the competition between two companies BURGER-A and<br/>
+BURGER-B with respect to the number of sales points.</p>
+<p>URGER-A (designated as A) has sales points while BURGER-B (desig-<br/>
+nated as B) has sales points.</p>
+<p>The game consists in taking or losing the sales points through competitions<br/>
+simulated by tossing a coin. Thus,</p>
+<ul>
+<li>if HEADS occurs, A wins the first competition and takes possession of<br/>
+one of B’s sales points and</li>
+<li>f TAILS occurs, B takes possession of one of A’s sales points.</li>
+</ul>
+
+<p>The game ends when one of the companies loses all its sales points. For<br/>
+instance, starting with the values = 2 and = 1 we have:</p>
+
+<dl>
+<ol type="a">
+<dt><li><b> First competition:</b></li></dt>
+<dd>If HEADS occurs, then A wins and stays with = 3 and = 0 and we have<br/>
+a VICTORY FOR A, or<br/>
+If TAILS occurs, then B wins with = 1 and = 2 and we will have the<br/>
+second competition.</dd>
+<dt><li type="b"><b>  Second competition:</b></li></dt>
+<p><dd>HEADS: A wins with = 2 and = 1 and the game returns to the same<br/>
+situation of the first competition, or<br/>
+TAILS: B wins with = 0 and = 3 and we have a VICTORY FOR</dd></p>
+</ol>
+</dl>
+</div>
+<br><br/>
+<br><br/>
+<br><br/>
+
+<p>282 Shimizu, de Carvalho and Laurindo</p>
+
+<p>For every two competitions there exists a return to the first competition with<br/>
+probability P (return to first competition) = ¼, forming an infinite sequence of<br/>
+these two competitions.</p>
+<h3>General Formulas for Game One</h3>
+<p>For any value of e it is possible to show, using mathematical approximation<br/>
+of infinite series, that</p>
+<p>P(Victory for A) = / ( + ) and P(Victory for B) = b / ( + ).</p>
+<p>Thus, the probability of victory is directly proportional to the value of its<br/>
+available resource ( and ) if the chance of winning a competition is equal for<br/>
+both companies.</p>
+<p><em>Game Two: Competition Between two Companies with Different<br/>
+Material Resources and Different Chances of Winning a Competition</em></p>
+<div style="width:550px;height:2px;background-color:black;"> </div>
+
+<p>Let’s consider that, in addition to establishing the value and for material<br/>
+resources, we can also fix different chances of winning each competition, with<br/>
+probability P(A wins one competition) = a and P(B wins one competition) =1-<br/>
+a = b.</p>
+<p>What are the chances of VICTORY for each company?<br/>
+For instance,</p>
+<p>
+if = 1, = 1 , a = 2/3 and b= 1 – a = 1/3, then we could have<br/>
+P(A wins) = 2/3 with = 2 and = 0, and have a VICTORY FOR A or<br/>
+P(B wins) = 1/3 with = 0 and = 1, and have a VICTORY FOR B.
+</p>
+
+<h3>General Formulas for Game Two</h3>
+
+<p>Using mathematical approximations based on the Gambler’s Ruin Problem of<br/>
+Probability Theory ( Feller, W. – An Introduction to Probability Theory and its<br/>
+Applications – 2nd Edition, Wiley, 1957, p. 314) it is possible to show that:</p>
+<br><br/>
+<br><br/>
+<br><br/>
+
+<p>The Role Of Simulation And Modern Business Games 283</p>
+<p>P(Victory of A) = [ 1 – (b/a) ] / [ 1 – (b/a)+] and</br/>
+P(Victory of B) = 1 – P(Victory of A)</p>
+<p>and are the material resources of A and B and a and b are the probabilities<br/>
+of victory for A and B in a single competition.</p>
+<h2>A Market Share Simulation Based on Game Two</h2>
+<div style="width:550px;height:4px;background-color:black;"> </div>
+
+<p>The effect of resources and , while the probability of victory in each<br/>
+competition is a < b, can be analyzed using simulation. Simulations experiments<br/>
+make it possible to observe some interesting results as shown in Table 11.2.<br/>
+Each simulation experiment S was repeated 10 times and N is the number of<br/>
+competitions held in each simulation run.</p>
+<p><em>Comments</em></p>
+<div style="width:550px;height:2px;background-color:black;"></div>
+<p>It is possible to see that, in some cases, when the probability of victory in each<br/>
+competition is a < b (not favorable for A), A can win the competition, starting<br/>
+with greater amount of resources, > b. The difference between final resources<br/>
+and depends on the total number N of competitions.</p></div>
+<h2>A General Purpose Business Game</h2>
+<div style="width:550px;height:2px;background-color:black;"></div>
+
+<p>The basic form of a general purpose model of BUSINESS GAME [Naylor &<br/>
+others (1971)] can be described as follows:</p>
+
+<em>A business game with "1" companies competing for the market share of<br/>
+"M" products in "K" market places.</em>
+<p>For each period of simulation, the N companies fill out a DECISION FORM<br/>
+containing, for instance:</p>
+<p>DECISION 1: Unit sale price for each one of the M products;</p>
+<p>DECISION 2: Total value invested in marketing;</p>
+
+<br><br/>
+<br><br/>
+<br><br/>
+
+<p>284 Shimizu, de Carvalho and Laurindo</p>
+
+<em>Table 11.2. Simulation results of Game Two</em>
+<br><br/>
+
+<table cellspacing="15">
+<tr>
+<th>S</th>
+<th>N</th>
+<th>a</th>
+<th>b</th>
+<th>Initial</th>
+<th>Final*</th>
+<th>values</th>
+<th> </th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>20</td>
+<td>0.4</td>
+<td>0.6</td>
+<td>15  10</td>
+<td>14.79</td>
+<td>10.26</td>
+<td>Remakes<br/>
+A keeps initial and</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>20</td>
+<td>0.4</td>
+<td>0.6</td>
+<td>20  20</td>
+<td>19.79</td>
+<td>20.20</td>
+<td>A is about to lose</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>50</td>
+<td>0.4</td>
+<td>0.6</td>
+<td>30  20</td>
+<td>25.866</td>
+<td>24.13</td>
+<td>B becomes close to A</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>100</td>
+<td>0.4</td>
+<td>0.6</td>
+<td>20  20</td>
+<td>12.861</td>
+<td>27.138</td>
+<td>B wins easily</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>100</td>
+<td>0.4</td>
+<td>0.6</td>
+<td>50  50</td>
+<td>41.56</td>
+<td>58.435</td>
+<td>B wins</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>100</td>
+<td>0.4</td>
+<td>0.6</td>
+<td>70  50</td>
+<td>61.564</td>
+<td>58.435</td>
+<td>A keeps superiority</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td>200</td>
+<td>0.4</td>
+<td>0.6</td>
+<td>70 50</td>
+<td>53.712</td>
+<td>66.287</td>
+<td>A loses superiority</td>
+</tr>
+
+
+<tr>
+<td>8</td>
+<td>200</td>
+<td>0.4</td>
+<td>0.6</td>
+<td>85  50</td>
+<td>68.712</td>
+<td>66.287</td>
+<td> Final and are very close</td>
+</tr>
+</table>
+
+<p>DECISION 3: Estimated cost of production in this period;</p>
+<p>DECISION 4: Expenditure to improve the factory; and</p>
+<p>DECISION 5: Investment in product improvement (R&D).</p>
+
+<p>The decisions for the First Period of simulation (first month) are based on a<br/>
+FINANCIAL REPORT of a period earlier to the time of simulation, which<br/>
+allows the participating companies to have an exact idea (in addition to the<br/>
+explanations given by the coordinator of the game) of the companies’ past<br/>
+activities in the markets they participate in. In the First Period, participants<br/>
+receive the same Financial Report.</p>
+<p>After the decisions for a period are made by each participant, simulation<br/>
+software receives the information of the decision forms. After the simulation<br/>
+each company receives an updated and confidential FINANCIAL REPORT,<br/>
+with the results from this period together with an INDUSTRY REPORT<br/>
+informing market data and nonconfidential data from all the companies. Table<br/>
+11.3 provides a sample of the main items of a FINANCIAL REPORT.</p></div>
+<em>Evaluation of the Results of the Business Game</em>
+<div style="width:550px;height:2px;background-color:black;"></div>
+
+<p>After practicing the game for a certain number of periods, (a semester or a<br/>
+year), an analysis of the economic situation and performance of each company<br/>
+should be done. Each company prepares its FINAL FINANCIAL REPORT<br/>
+and BALANCE SHEET to be discussed by the participants. The person who<br/>
+coordinates the game should make a comparative analysis of the performance</p>
+<br><br/>
+<br><br/>
+<br><br/>
+
+<p>The Role Of Simulation And Modern Business Games 285<p>
+
+<i>Table 11.3. Example of a partial Financial Report of a general purpose<br/>
+Business Game (adapted from Naylor et al., 1971)</i>
+
+<table>
+
+<tr>
+<td>BUSINESS GAME</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>FINANCIAL REPORT</td>
+<td></td>
+<td>COMPANY A</td>
+<td>FIRST PERIOD</td>
+</tr>
+
+<tr>
+<td>*SALES ANALYSIS*</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Orders</td>
+<td></td>
+<td>253</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Sales</td>
+<td></td>
+<td>253</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Unit Price</td>
+<td></td>
+<td>$40</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Sales Revenue</td>
+<td></td>
+<td>$10119</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Marketing Expenses</td>
+<td></td>
+<td>$600</td>
+<td></td>
+</tr>
+
+<tr>
+<td>*PRODUCTION*</td>
+<td>INVENTORY</td>
+<td>PRODUCTION</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Quantity</td>
+<td></td>
+<td>....</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Unit Cost</td>
+<td></td>
+<td>....</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Total Cost</td>
+<td></td>
+<td>....</td>
+<td></td>
+</tr>
+
+<tr>
+<td>*PROFITS AND LOSS*</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Revenues</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td> Cost Goods Sold</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>esearch and Development</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Depreciation</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Total Expenses</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Profit</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Taxes</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Net Profit</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>* CASH STATEMENT *</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>* BALANCE SHEET*</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Cash</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td> Inventory</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td> Value of Plant</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Depreciation</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>TOTAL ASSETS</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<p>of the companies, taking into consideration the companies’ behavior based in<br/>
+all the factors involved, and not just in the variation of Net Profit value.</p>
+<div><h2>Continuous System Simulation</h2></div>
+<div style="width:550px;height:4px;background-color:black;"></div>
+
+<p>A discrete-event simulation becomes complex when each equation involves<br/>
+several variables of the problems simultaneously. One approach to simplify the<br/>
+numerical calculations is to consider a set of simultaneous algebraic equations<br/>
+or differential equations. Periods of time are advanced in uniform steps, and a<br/>
+model of the system is represented in the form of difference or differential<br/>
+equations. The variables of the model representing the attributes of the system<br/>
+entities are controlled by continuous equations.</p>
+
+<p>Simulation of a continuous system is largely used to control complex or<br/>
+nonlinear engineering problems, or econometric models. Particular interest in</p>
+
+<br><br/>
+<br><br/>
+<br><br/>
+
+
+<p>286 Shimizu, de Carvalho and Laurindo</p>
+
+<p>using simulation of continuous systems relies in the fact that behavior of a system<br/>
+can be controlled through the coupling between the input and output of the<br/>
+system. The termfeedback is used to describe this phenomenon.</p>
+
+<p><i>Industrial Dynamics and Business Dynamics</i> are models used to simulate<br/>
+complex industrial and business systems. Industrial Dynamics is a term created<br/>
+by Professor J. W. Forrester of MIT (Forrester, 1961), aiming to study the<br/>
+characteristics and the performance of business corporations or one entire<br/>
+industry. Business Dynamics is a term used by Professor J. D Sterman of MIT<br/>
+(Sterman, 2000), extending the research on system dynamics for advanced<br/>
+models of the business system. The illustrative example of Industrial Dynamics<br/>
+Model of an Inventory Control System (Forrester, 1969), shown in the<br/>
+following section, is based on the description and results presented by Gordon<br/>
+(1978).</p>
+
+<h2>Industrial Dynamics Model of an Inventory Control<br/>
+System</h2>
+<div style="width:550px;height:4px;background-color:black;"></div>
+
+<p>A simple model of the inventory control system can be defined by the following<br/>
+system of two ordinary first-order differential equations:</p>
+
+<p>Y’ = U – V and X’ = V – S</p>
+<p>V is the equation for the rate of delivery V = Y / T1, and U is the order rate<br/>
+expressed by</p>
+
+<p>U = S + K (I – X).</p>
+
+<p>X is the current inventory level, Y is the outstanding level of orders placed with<br/>
+the supplier, U is the rate of ordering from supplier, V is the rate of delivery from<br/>
+supplier, and S is the rate of sales. In addition, three constants need to be<br/>
+defined: I is the prefixed planned inventory level, T1 is the average delivery<br/>
+time, and K is a constant called ordering constant.</p>
+
+<p>The ordering policy introduces feedback and the value of K corresponds to the<br/>
+amplification in the feedback loop. The value of K, along with the value of T1,<br/>
+will determine if the system oscillates or not.</p>
+
+<br><br/>
+<br><br/>
+<br><br/>
+
+<p>The Role Of Simulation And Modern Business Games 287</p>
+
+<p>This problem can be solved using a continuous system modeling language like<br/>
+DYNAMO, or directly using a numerical method for a system of two first-order<br/>
+differential equations, like Runge-Kutta method. The graphics shown in the<br/>
+Figure 11.3 corresponds to the partial results presented in Gordon (1978)<br/>
+using the IBM 360/CSMP (Continuous System Modeling Program).</p></div>
+<p>Assume that a time is measured in units of days, and let the system be initialized<br/>
+at time t = 0, with the following initial conditions:</p></div>
+<p>I = X = 20 units; Y = 12 units; S = 4 items/day and T1 = 3 days.</p>
+<p>Suppose the demand suddenly increases at time t = 4 to S = 6 items/day. The<br/>
+oscillations of inventory level for some values of K (K = 1 or 0.5) are shown<br/>
+in Figure 11.3.</p>
+
+<p>Inventory level X (initial value X = 20 for t = 0).</p>
+<br><br/>
+<br><br/>
+
+<i>Figure 11.3. Industrial dynamics model of an inventory control system:<br/>
+effects of feedback for K = 1.0 and 0.5(adapted from Gordon, 1978)</i></div>
+<br><br/>
+<img src="Screenshot 2024-01-20 130309.png" width:200 height:300 />
+
+<br><br/>
+<br><br/>
+
+<p>288 Shimizu, de Carvalho and Laurindo</p>
+
+
+<div><h1>Case Study: Strategy and<br/>
+Decisions in Perspective</h1></div>
+<div style="width:550px;height:4px;background-color:black;"></div>
+
+<h2>Case – The Struggle Against Uncertainty</h2>
+<div style="width:550px;height:4px;background-color:black;"></div>
+
+<p>For most of human history, people have had nothing more than instinct and<br/>
+superstition to guide them in the face of uncertainty. The greatest of mathema-<br/>
+ticians among the Egyptians, the Assyrians, the Greeks, the Romans and the<br/>
+wise persons of the Middle Ages never considered whether it was worth it to<br/>
+spend time measuring or managing risk, accepting uncertainty as a fatalism.<br/>
+Even the gambling was practiced by rules that seemed arbitrary to anyone with<br/>
+an elementary knowledge of probability.</p>
+<p>Things began to change during the Renaissance and the Reformation period,<br/>
+when there were changes in the way of thinking about the future. In 1654, the<br/>
+mathematicians Blaise Pascal and Pierre de Fermat used mathematics to<br/>
+analyze a simple game of chance —– and thus created the basis for the theory<br/>
+of probability. The discoveries and developments of sampling techniques,<br/>
+utility, regression, and correlation, provided a solid foundation to make a<br/>
+rational assessment of risk management.</p>
+<p>However, the advances of modern risk-management techniques should not<br/>
+lead us to think that we totally dominate risk, or that such a feat might be<br/>
+possible some day. It is important to remember that uncertainty is our friend,<br/>
+not an adversary. For example, imagine a life without uncertainties, totally<br/>
+ordered and predictable, that never deviates from an average pattern. Life<br/>
+without uncertainty would be like a movie whose end we already know.<br/>
+
+<p>I believe that the best way possible for us to live in this world is something close<br/>
+to the one what we have, a world where life is like a game of bridge or poker,<br/>
+and not like a game of roulette. It is worth making the effort to understand the<br/>
+process of evaluating and controlling risk and uncertainty because human<br/>
+beings learn from experience and from technology</p>
+<p>(Excerpted from: The enlightening struggle against uncertainty, Peter L. Berstein,<br/>
+Financial Times, Mastering Risk, Part 1, May2, 2000, pp. 1-4).</p>
+<br><br/>
+<br><br/>
+<br><br/>
+
+<p>The Role Of Simulation And Modern Business Games 289</p>
+
+<h2>Case – Project to Launch a New Product</h2>
+<div style="width:550px;height:4px;background-color:black;"></div>
+
+<p>The pharmaceutical company MSS is developing a project to launch a food<br/>
+supplement to be called PLQ in the market. This food supplement is added to<br/>
+sugar to inhibit the development of dental caries, especially among adolescents.<br/>
+Laboratory tests done up to the present have shown promising results and the<br/>
+company is at the point of deciding between “going ahead with the project” or<br/>
+simply abandoning it, absorbing the costs involved up to now. The company has<br/>
+earlier experience in launching products and even though this is a new product<br/>
+it was possible to construct a decision tree with multiple stages. This is a<br/>
+problem of strategic nature for the company. The project needs to be<br/>
+completed with the values of the parameters estimated based in past experi-<br/>
+ence.</p>
+
+<em>The Decision Tree</em>
+<div style="width:550px;height:2px;background-color:black;"></div>
+
+<p>To proceed with the project for launching the product it was necessary to<br/>
+consider the following decision stages:</p>
+<p><b>Decision</b> 1. Proceed with other “laboratory tests” to verify the toxicity (two<br/>
+possible outcomes “acceptable” and “ unacceptable”) and efficacy of the<br/>
+product (three possible outcomes “good”, “average”, and “bad”) or<br/>
+“abandon ” the project without further laboratory tests.</p>
+
+<p><b>Decision</b> 2. According to the results of the laboratory tests, two possible<br/>
+alternatives follows: “continue the project” doing “clinical trials” with<br/>
+humans or “abandon” the project. The “clinical trials” can have two<br/>
+possible results: Positive or Neutral. The results of clinical trials will be<br/>
+available only after three years of testing.</p>
+
+<p><b>Decision</b> 3. Whatever the results of the clinical trials, it will be necessary to<br/>
+decide between: “launch the product” or “abandon” the project. After<br/>
+launching the project, there can be two alternatives depending on the<br/>
+economic viability: Success (S) with positive gains as a result of good<br/>
+acceptance of the product in the market or, Failure (F) with little or no<br/>
+acceptance of the product in the market. The launch of the product will<br/>
+occur only in the fourth year of the project, after the laboratory tests (1<br/>
+year) and clinical trials (3 years).</p>
+
+<br><br/>
+<br><br/>
+<br><br/>
+
+
+<p>290 Shimizu, de Carvalho and Laurindo</p>
+
+<p>A decision tree with 2 x 3 x 2 x 2 = 24 branches other than the three alternatives<br/>
+to “abandon” the project is then constructed.</p>
+
+<p>The values of the costs in each node of the decision tree should also be<br/>
+estimated. Since the nodes of the tree are located through different future time<br/>
+periods during the project, each estimated value needs to be updated to the<br/>
+present moment so that it will be possible to compare all these values in the initial<br/>
+period of the project. The Net Present Value (NPV) method must be used for<br/>
+this purpose.</p>
+
+<b>Strategy A</b>
+<p>Taking into account that the expert estimated the probability of launching the<br/>
+product with success, as P (S) = 0,7, after exploring the decision tree from the<br/>
+end to the beginning, this estimate provided, for example, an Expected<br/>
+Monetary Value or EMV = $979 136 and the following possible events:</p>
+
+<table  border=" ">
+<tr>
+<th>Events</th>
+<th>Probabilities</th>
+<th>Cost </th>
+<th>(Win or Lose)</th>
+</tr>
+
+<tr>
+<td align="center">a) Abandon the<br/>
+project</td>
+<td align="center" >0.416 </td>
+<td align="center" >-</td>
+<td align="center">$47,727</td>
+</tr>
+
+<tr>
+<td align="center" >b) Launch the<br/>
+project with<br/>
+success</td>
+<td align="center">0.476 </td>
+<td align="center"></td>
+<td align="center">$2,594,578</td>
+</tr>
+
+<tr>
+<td align="center" >c) Launch the product<br/>
+with failure</td>
+<td align="center" >0.108</td>
+<td align="center">-</td>
+<td align="center">$2,186,516</td>
+</tr>
+</table>
+
+<p><b>Sensitivity Analysis</b></p>
+<p>Up to this point, only one value for each cost and probability was estimated or<br/>
+calculated to have a strategic decision alternative. An analysis of variation of the<br/>
+results expressed in terms of EMV value, changing the values of the cost and/<br/>
+or the probabilities is called Sensitivity Analysis of the project. In decision trees<br/>
+of reduced size, this analysis is usually done by trying to answer the question,<br/>
+“what would happen to the project result if this or that values were to occur?”<br/>
+For example, let’s suppose that another strategy has been formulated.</p>
+<p><b>Strategy B</b>
+<p>If the expert suspects that after launching the product, the chances of success<br/>
+or failure are equal, that is, P(Success) = P(Failure) = 0.5, redoing all the<br/>
+calculations and utilizing the criterion of the greatest EMV value, we have a new<br/>
+EMV value equals to $479,677 and the following events:<p>
+
+<br><br/>
+<br><br/>
+<br><br/>
+
+<p>The Role Of Simulation And Modern Business Games 291</p>
+
+<table  border=" ">
+<tr>
+<th>Events</th>
+<th>Probabilities</th>
+<th>Cost </th>
+<th>(Win or Lose)</th>
+</tr>
+
+<tr>
+<td align="center"> a) Abandon the project<br/>
+after lab tests</td>
+<td align="center" >0.48 </td>
+<td align="center" >-</td>
+<td align="center">$47,727</td>
+</tr>
+
+<tr>
+<td align="center" >b) Launch the product<br/>
+with success</td>
+<td align="center">0.30</td>
+<td align="center">+</td>
+<td align="center">$2,594,578</td>
+</tr>
+
+<tr>
+<td align="center" >c) Launch the product<br/>
+with failure</td>
+<td align="center" >0.10</td>
+<td align="center">-</td>
+<td align="center">$2,186,516</td>
+</tr>
+
+<tr>
+<td align="center" >d) Abandon the project<br/>
+after clinical trials</td>
+<td align="center" >0.12</td>
+<td align="center">-</td>
+<td align="center">$479,982</td>
+</tr>
+</table>
+
+<p>The new estimate P(Success) = 0.5 of the probability of success after launching<br/>
+the product reduced the final value of EMV, creating a new possibility (d) for<br/>
+abandoning the project.</p>
+<p>In this case, a sensitivity analysis, based on the variation of the estimates of<br/>
+probabilities and costs, is extremely time-consuming. Comparison of Strategy<br/>
+A and B must be done using stochastic dominance technique based in Monte<br/>
+Carlo calculations. The results of this analysis can be found in Gregory (1980).</p>
+
+<p>Source: (Adapted from Gregory, 1980).</p>
+<br><br/>
+<div><h2>Conclusions</h2></div>
+<div style="width:550px;height:4px;background-color:black;"></div>
+
+<p>Complex strategic-decision problems often require the use of multistage<br/>
+decision trees. For each event located at one of the tree nodes, an estimation<br/>
+of the probability values corresponding to the level of uncertainty of occurrence<br/>
+of this event is calculated. The estimations of these probability values based on<br/>
+historical data or subjective assessment of experts are unlikely to be efficient<br/>
+because of the large number of nodes and branches of the decision tree<br/>
+involved. The chain of conditional probability values formed along a branch of<br/>
+the decision tree may cause difficulty to conduct the decision based on a single<br/>
+value of the Expected Monetary Value.</p>
+
+<p>The simulation or Monte Carlo process generates a large number of random<br/>
+results for the problem forming a statistically acceptable sample of the popu-<br/>
+lation of events of the real problem. Simulation provides the determination of<br/>
+the probability distribution of intermediate or final event of the decision process<br/>
+making it possible the comparison of different strategies using the<i> stochastic<br/>
+dominance</i> technique.</p>
+<br><br/>
+<br><br/>
+<br><br/>
+
+<p>292 Shimizu, de Carvalho and Laurindo</p>
+<p>The decision-making process involving competition among companies can be<br/>
+better understood and explained through the use of appropriate <i>business<br/>
+games</i>. Business game is an efficient tool to create a virtual environment for<br/>
+strategic competitions and can be used mainly for training purpose. Cost<br/>
+restriction and the difficulty to find a business game tailored to the needs of a<br/>
+company make its use more appropriate in university courses or in a specific<br/>
+type of business.</p>
+<p>Continuous system models of simulation are used to analyze the overall<br/>
+dynamic behavior of a system represented by a set of continuous algebraic or<br/>
+differential equations. Industrial Dynamics and Business Dynamics are used to<br/>
+represent and analyze the dynamic transformation of industrial and business<br/>
+activities over a period of time.</p>
+<p>Simulation of real world problems involves many structured and nonstructured<br/>
+parameters requiring the use of techniques of the Expert Systems and Artificial<br/>
+Intelligence (Cook & Russel, 1993; Sanjay & others, 1990; Day et al., 1997).</p>
+<br><br/>
+<div><h2>Questions for Discussion and Reflection</h2></div>
+<div style="width:550px;height:4px;background-color:black;"></div>
+
+<ol>
+<p><li> Explain the nature and purposes of the simulation process</li></p>
+<p><li>Explain how to make the comparison of two similar strategies using<br/>
+<i>stochastic dominance</i>.</li></p>
+<p><li> What are the advantages of a business game?</li></p>
+<p><li> What are the disadvantages of a business game?</li></p>
+<p><li> Considering the case in the section titled The Struggle Against Uncer-<br/>
+tainty, answer the following questions:</li></p></p>
+<ul>
+<p><li>Using the exercises presented in this chapter, comment on the role<br/>
+of simulation and Monte Carlo Techniques to resolve the problem<br/>
+of uncertainty and risk.</li></p>
+<p><li> What are the main roles of dynamic continuous system models of<br/>
+simulation?</li></p>
+</ul>
+<br><br/>
+<br><br/>
+<br><br/>
+
+<p>The Role Of Simulation And Modern Business Games 293</p>
+<p><li>Considering the case in the section titled Project to Launch a New<br/>
+Product, answer the following questions:</li></p>
+<ul>
+<p><li>List the main difficulties found to resolve this project without the use<br/>
+of a simulation model, considering the size of decision tree.</li></p>
+<p><li>How is it possible to compare strategy A against strategy B? Explain<br/>
+the difficulties for the use of stochastic dominance technique for this<br/>
+case.</li></p>
+</ul>
+</ol>
+
+<div><h2>Exercises</h2></div>
+<div style="width:550px;height:4px;background-color:black;"></div>
+
+<p>1.  <i> The Game Using Chips</i></p>
+<p>Prepare blue chips representing company A’s material resources and<br/>
+ red chips representing the material resources of company B ( < 10 and<br/>
+ < 10).</p>
+<p>GAME ONE – toss a coin (a = b = ½) to obtain the result of each
+competition; and</p>
+<p>GAME TWO – use a die to draw the different probabilities of victory a<br/>
+and b, in each competition.</p>
+<p>Play the game ONE and TWO several times (10 times each) for different<br/>
+values of a and b. Compare the results of the simulation with the result<br/>
+using the mathematical formula presented in this chapter.</p>
+
+<p>2. <i>Other Types of Business Games</i></p>
+
+<p>sent written reports of the characteristics, advantages and disadvan-<br/>
+tages of other Business Games you can find in the literature (or web sites),<br/>
+such as:<i> Publicity and Marketing Game, Opinion Polling Game,<br/>
+Game of Financial Investment,</i> etc.</p>
+<div><h2>References</h2></div>
+<div style="width:550px;height:4px;background-color:black;"></div>
+
+<p>Day, G.S., et al. (Eds.). (1997).<i> Wharton on dynamic competitive strategy.</i><br/>
+New York: John Wiley & Sons.</p>
+
+<br><br/>
+<br><br/>
+<br><br/>
+
+<p>294 Shimizu, de Carvalho and Laurindo</p>
+<p>Forrester, J. W. (1961).<i> Industrial dynamics</i>. Cambridge, MA: MIT Press<br/>
+(currently available from Pegasus Communications, Waltham, MA).</p>
+
+<p>Forrester, J. W. (1969).<i> Principle of systems</i>. Cambridge, MA: Wright-Allen<br/>
+Press.</p>
+<p>Goodwin, P., & Wright, G. (1996).<i> Decision analysis for management<br/>
+judgment</i>. New York: John Wiley & Sons.</p>
+<p>Gordon, G. (1978).<i> Systems simulation</i> (2nd ed.). NJ: Prentice-Hall.</p>
+<p>Gregory, G. (1980). <i>Decision analysis</i>. New York: Pitman Books.</p>
+<p>Kinoshita, E. (1996).<i> Introduction to management science</i> (in Japanese).<br/>
+Tokyo: Sakurai Publishers.</p>
+<p>Naylor, T., et al. (1971).<i> Computer simulation experiments with models of<br/>
+economic systems</i>. New York: John Wiley & Sons.</p>
+<p>Sanjay, J., et al. (1990). Expert simulation for on-line scheduling.<i> Communi-<br/>
+cations of the ACM</i>, 33(10), 55-60</p>
+<p>Sterman, J.D. (2000).<i> Business dynamics</i>. New York: Irwing/McGrow-Hill.</p>
+
+
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+
+<p>Decision Based On Organizational Knowledge, Decision Support Systems 295</p>
+
+<div><h3>Chapter XII</h3></div>
+<div><h1 "type=text-align:center;">Decision Based On<br/>
+Organizational<br/>
+Knowledge, Decision<br/>
+Support Systems,<br/>
+Expert System And<br/>
+Business Intelligence</h1></div>
+
+
+<div><h2>Introduction</h2></div>
+<div style="width:550px;height:4px;background-color:black;"></div>
+
+
+<p>Organizations are often seeking techniques for improving the actions to<br/>
+structure decision models. However, with the possible exception of routine and<br/>
+well-structured problems, most of the decision problems found in organizations<br/>
+constitute a chaotic and complex family of problems. The<i> principle of bounded<br/>
+rationality</i> proposed by Herbert Simon suggests the use of a decision model<br/>
+based on a simplified model of a firm with a small number of relational concepts,<br/>
+such as: (a) quasi resolution of conflict,( b) uncertainty avoidance or minimiza-<br/>
+tion, (c) search directed around the main objective of the problem and, (d)<br/>
+adaptation of organizational goals based on learning.</p>
+
+
+
+
+
+</body>
+
+
+<html>
+
+
